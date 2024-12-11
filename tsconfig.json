@@ -2,16 +2,16 @@
   "compilerOptions": {
     "outDir": "./dist",
     "baseUrl": "./",
-    "target": "ES2020",
+    "target": "ES2019",
     "lib": ["DOM", "ESNext"],
-    "module": "Node16",
+    "module": "commonjs",
     "strict": true,
     "declaration": true,
     "isolatedModules": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "moduleResolution": "Node16"
+    "moduleResolution": "node"
   },
   "include": ["src"]
 }
