@@ -1,7 +1,7 @@
 {
-  "name": "rsbuild-plugin-example",
+  "name": "winjs-plugin-example",
   "version": "0.0.0",
-  "repository": "https://github.com/rspack-contrib/rsbuild-plugin-template",
+  "repository": "https://github.com/winjs-dev/winjs-plugin-template",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -30,7 +30,7 @@
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "@playwright/test": "^1.49.0",
-    "@rsbuild/core": "^1.1.6",
+    "@winner-fed/winjs": "^0.11.21",
     "@rslib/core": "^0.1.1",
     "@types/node": "^22.10.1",
     "playwright": "^1.49.0",
@@ -38,10 +38,10 @@
     "typescript": "^5.7.2"
   },
   "peerDependencies": {
-    "@rsbuild/core": "1.x"
+    "@winner-fed/winjs": "^0.11.21"
   },
   "peerDependenciesMeta": {
-    "@rsbuild/core": {
+    "@winner-fed/utils": {
       "optional": true
     }
   },

@@ -1,16 +1,20 @@
-import type { RsbuildPlugin } from '@rsbuild/core';
+import type { IApi } from '@winner-fed/winjs';
 
-export type PluginExampleOptions = {
-  foo?: string;
-  bar?: boolean;
+export default (api: IApi) => {
+  api.describe({
+    key: 'example',
+    enableBy: api.EnableBy.config,
+    config: {
+      schema(zod) {
+        return zod.object({
+          foo: zod.string(),
+        });
+      },
+    },
+  });
+
+  api.modifyConfig((memo) => {
+    memo.foo = api.userConfig.example.foo;
+    return memo;
+  });
 };
-
-export const pluginExample = (
-  options: PluginExampleOptions = {},
-): RsbuildPlugin => ({
-  name: 'plugin-example',
-
-  setup() {
-    console.log('Hello Rsbuild!', options);
-  },
-});
