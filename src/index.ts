@@ -5,12 +5,12 @@ export default (api: IApi) => {
     key: 'example',
     enableBy: api.EnableBy.config,
     config: {
-      schema(zod) {
+      schema({ zod }) {
         return zod.object({
-          foo: zod.string(),
+          foo: zod.string()
         });
-      },
-    },
+      }
+    }
   });
 
   api.modifyConfig((memo) => {

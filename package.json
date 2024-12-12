@@ -1,6 +1,6 @@
 {
   "name": "winjs-plugin-example",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "repository": "https://github.com/winjs-dev/winjs-plugin-template",
   "license": "MIT",
   "type": "module",
