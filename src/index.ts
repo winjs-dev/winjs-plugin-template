@@ -7,10 +7,10 @@ export default (api: IApi) => {
     config: {
       schema({ zod }) {
         return zod.object({
-          foo: zod.string()
+          foo: zod.string(),
         });
-      }
-    }
+      },
+    },
   });
 
   api.modifyConfig((memo) => {
