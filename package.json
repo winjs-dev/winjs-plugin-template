@@ -1,5 +1,5 @@
 {
-  "name": "winjs-plugin-example",
+  "name": "winjs-plugin-template",
   "keywords": [
     "winjs",
     "plugin",
@@ -68,7 +68,6 @@
       "optional": true
     }
   },
-  "packageManager": "pnpm@10.12.4",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
