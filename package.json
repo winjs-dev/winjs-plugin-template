@@ -12,7 +12,10 @@
     "biome"
   ],
   "version": "0.0.0",
-  "repository": "https://github.com/winjs-dev/winjs-plugin-template",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/winjs-dev/winjs-plugin-template.git"
+  },
   "license": "MIT",
   "type": "module",
   "exports": {
