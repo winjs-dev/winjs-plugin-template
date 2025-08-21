@@ -50,7 +50,6 @@
     "@rslib/core": "^0.10.4",
     "@types/node": "^22.15.34",
     "@winner-fed/winjs": "*",
-    "playwright": "^1.53.2",
     "simple-git-hooks": "^2.13.0",
     "typescript": "^5.8.3"
   },
@@ -67,6 +66,10 @@
     "@winner-fed/utils": {
       "optional": true
     }
+  },
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=10"
   },
   "publishConfig": {
     "access": "public",
